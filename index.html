@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumers Educational Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="scores">
+            <p>Player 1: <span id="player1-score">0</span> points</p>
+            <p>Player 2: <span id="player2-score">0</span> points</p>
+        </div>
+
+        <h1 id="level-title">Level 1: Food and Nutrition</h1>
+        <p id="question-text">Which nutrient is most important for muscle repair?</p>
+        <div id="answers">
+            <button class="answer-btn" onclick="checkAnswer(0)">Carbohydrates</button>
+            <button class="answer-btn" onclick="checkAnswer(1)">Proteins</button>
+            <button class="answer-btn" onclick="checkAnswer(2)">Fats</button>
+            <button class="answer-btn" onclick="checkAnswer(3)">Vitamins</button>
+        </div>
+        <p id="result-text"></p>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+        <button id="restart-btn" onclick="restartGame()" style="display: none;">Restart Game</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
